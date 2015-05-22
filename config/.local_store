@@ -1,0 +1,93 @@
+{
+    "MobileSample_Resources_jQueryMobile.resource": {
+        "createdById": "0051a000000RZGeAAO", 
+        "createdByName": "Eduardo Aguad", 
+        "createdDate": "2015-05-18 10:42:44", 
+        "fileName": "unpackaged/staticresources/MobileSample_Resources_jQueryMobile.resource", 
+        "fullName": "MobileSample_Resources_jQueryMobile", 
+        "id": "0811a000000PxGBAA0", 
+        "lastModifiedById": "0051a000000RZGeAAO", 
+        "lastModifiedByName": "Eduardo Aguad", 
+        "lastModifiedDate": "2015-05-19 08:54:15", 
+        "mmState": "clean", 
+        "type": "StaticResource"
+    }, 
+    "MobileSample_jQueryMobile.page": {
+        "createdById": "0051a000000RZGeAAO", 
+        "createdByName": "Eduardo Aguad", 
+        "createdDate": "2015-05-18 10:42:44", 
+        "fileName": "unpackaged/pages/MobileSample_jQueryMobile.page", 
+        "fullName": "MobileSample_jQueryMobile", 
+        "id": "0661a000000XPdcAAG", 
+        "lastModifiedById": "0051a000000RZGeAAO", 
+        "lastModifiedByName": "Eduardo Aguad", 
+        "lastModifiedDate": "2015-05-18 12:53:57", 
+        "mmState": "clean", 
+        "type": "ApexPage"
+    }, 
+    "RemoteTK.component": {
+        "createdById": "0051a000000RZGeAAO", 
+        "createdByName": "Eduardo Aguad", 
+        "createdDate": "2015-05-18 10:42:44", 
+        "fileName": "unpackaged/components/RemoteTK.component", 
+        "fullName": "RemoteTK", 
+        "id": "0991a000000TbRMAA0", 
+        "lastModifiedById": "0051a000000RZGeAAO", 
+        "lastModifiedByName": "Eduardo Aguad", 
+        "lastModifiedDate": "2015-05-18 10:42:45", 
+        "mmState": "clean", 
+        "type": "ApexComponent"
+    }, 
+    "RemoteTKController.cls": {
+        "createdById": "0051a000000RZGeAAO", 
+        "createdByName": "Eduardo Aguad", 
+        "createdDate": "2015-05-18 10:42:44", 
+        "fileName": "unpackaged/classes/RemoteTKController.cls", 
+        "fullName": "RemoteTKController", 
+        "id": "01p1a000001EvU3AAK", 
+        "lastModifiedById": "0051a000000RZGeAAO", 
+        "lastModifiedByName": "Eduardo Aguad", 
+        "lastModifiedDate": "2015-05-18 13:26:07", 
+        "mmState": "clean", 
+        "type": "ApexClass"
+    }, 
+    "Resources.resource": {
+        "createdById": "0051a000000RZGeAAO", 
+        "createdByName": "Eduardo Aguad", 
+        "createdDate": "2015-05-18 12:53:57", 
+        "fileName": "unpackaged/staticresources/Resources.resource", 
+        "fullName": "Resources", 
+        "id": "0811a000000PxRKAA0", 
+        "lastModifiedById": "0051a000000RZGeAAO", 
+        "lastModifiedByName": "Eduardo Aguad", 
+        "lastModifiedDate": "2015-05-22 16:56:42", 
+        "mmState": "clean", 
+        "type": "StaticResource"
+    }, 
+    "TestRemoteTKController.cls": {
+        "createdById": "0051a000000RZGeAAO", 
+        "createdByName": "Eduardo Aguad", 
+        "createdDate": "2015-05-18 10:42:44", 
+        "fileName": "unpackaged/classes/TestRemoteTKController.cls", 
+        "fullName": "TestRemoteTKController", 
+        "id": "01p1a000001EvU4AAK", 
+        "lastModifiedById": "0051a000000RZGeAAO", 
+        "lastModifiedByName": "Eduardo Aguad", 
+        "lastModifiedDate": "2015-05-18 13:26:07", 
+        "mmState": "clean", 
+        "type": "ApexClass"
+    }, 
+    "menu.page": {
+        "createdById": "0051a000000RZGeAAO", 
+        "createdByName": "Eduardo Aguad", 
+        "createdDate": "2015-05-18 12:53:57", 
+        "fileName": "unpackaged/pages/menu.page", 
+        "fullName": "menu", 
+        "id": "0661a000000XQc4AAG", 
+        "lastModifiedById": "0051a000000RZGeAAO", 
+        "lastModifiedByName": "Eduardo Aguad", 
+        "lastModifiedDate": "2015-05-22 16:56:27", 
+        "mmState": "clean", 
+        "type": "ApexPage"
+    }
+}

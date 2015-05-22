@@ -1,0 +1,26 @@
+.menuBarItem{
+	text-align: center;
+	overflow: hidden;
+}
+
+.menuBarpage { padding: 0px !important; }
+
+.menuBarIcon {
+	color: white;
+	position: relative;
+	top: 50%;
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.resetIcon{
+	position: absolute;
+	top: 11px;
+	right: 13px;
+	font-size: 28px !important;
+	opacity: 0.2;
+}
+
+#mapspage, #map_canvas { width: 100%; padding: 0; }

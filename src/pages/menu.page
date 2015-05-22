@@ -1,0 +1,83 @@
+<apex:page showHeader="false" sidebar="false" docType="html">
+<html ng-App="MenuApp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="{!URLFOR($Resource.resources, 'css/menuBar.css')}"/> <!-- CSS for menu bar -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/> <!-- Font Awesome Icons-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- jQuery --> 
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script> <!-- Angular -->
+    <script src="{!URLFOR($Resource.resources, 'js/lib/jquery.transit.js')}"/> <!-- Transit Animation plugin -->
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="{!URLFOR($Resource.resources, 'js/lib/jquery-maps-ui/jquery.ui.map.js')}"/> <!-- jQuery UI Map -->
+    <!-- <script src="{!URLFOR($Resource.resources, 'js/lib/jquery-maps-ui/jquery.ui.map.extensions.js')}"/>  jQuery UI Map Extensions -->
+    <script src="{!URLFOR($Resource.resources, 'js/lib/jquery-maps-ui/jquery.ui.map.services.js')}"/> <!-- jQuery UI Map Services -->
+    <!-- <script src="{!URLFOR($Resource.resources, 'js/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js')}"/>  jQuery UI Custom -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyConDZAh7BBAdxJcZowntehhOKcE0QXu4A"></script> <!-- Maps API -->
+
+    <script src="{!URLFOR($Resource.resources, 'js/menuApp.js')}"/> <!-- Menu Controller -->
+    <script src="{!URLFOR($Resource.resources, 'js/controllers/mapsController.js')}"/> <!-- Maps Controller -->
+    <script src="{!URLFOR($Resource.resources, 'js/controllers/menuController.js')}"/> <!-- Menu Controller -->
+    <script src="{!URLFOR($Resource.resources, 'js/directives/barMenu.js')}"/> <!-- Bar Menu Directive -->
+
+</head>
+<body ng-controller="MenuController">
+    <div id="menupage" data-role="page">
+        <div role="main">
+            <div id="menulayer">
+                <bar-menu menu-items="menuItems"/>
+            </div>
+        </div>
+    </div><!-- /menupage -->
+
+    <div data-role="page" id="mapspage" class="ui-responsive-panel">
+        
+        <div data-role="header" data-position="inline">
+            <h1>Salesforce Maps</h1>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+            <a href="#add-form" data-icon="gear" data-iconpos="notext">Add</a>
+        </div><!-- /header -->
+        <div role="main" class="ui-content jqm-content jqm-fullwidth" id="map_canvas">
+        </div><!-- /content -->
+
+        <div data-role="panel" data-display="overlay" data-theme="a" id="nav-panel">
+            <ul data-role="listview">
+                <li data-icon="delete"><a href="#" data-rel="close">Cerrar menu</a></li>
+                <li data-icon="home" id="backtohome"><a href="#">Volver al menú</a></li>
+                <li><a href="#search-panel">Buscar colegio</a></li>
+                <li data-icon="search"><a href="#">Obtener direcciones</a></li>
+            </ul>
+        </div><!-- /panel -->
+
+        <!-- panel buscar colegio -->
+        <div data-role="panel" data-display="overlay" data-theme="a" id="search-panel">
+            <ul data-role="listview">
+                <li data-icon="delete"><a href="#" data-rel="close">Cerrar menu</a></li>
+                <form class="userform">
+                <label for="txtbuscarcolegio">Colegio a buscar:</label>
+                 <input type="text" name="txtbuscarcolegio" id="txtbuscarcolegio" value="" data-clear-btn="true" data-mini="true" />
+                 <div class="ui-block-b" id="btnbuscarcolegio"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Buscar</a></div>
+                 </form>
+            </ul>
+        </div><!-- /panel -->
+
+        <div data-role="panel" data-position="right" data-display="overlay" data-theme="a" id="add-form">
+            <form class="userform">
+                <h2>Login</h2>
+                <label for="name">Username:</label>
+                <input type="text" name="name" id="name" value="" data-clear-btn="true" data-mini="true" />
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" />
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini">Cancel</a></div>
+                    <div class="ui-block-b"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Save</a></div>
+                </div>
+            </form><!-- /form -->
+        </div><!-- /panel -->
+        </div><!-- /pagemaps -->
+</body>
+</html>
+</apex:page>

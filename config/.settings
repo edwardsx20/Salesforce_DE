@@ -1,0 +1,19 @@
+{
+    "username": "eaguad@gmail.com", 
+    "environment": "developer", 
+    "project_name": "Salesforce_DE", 
+    "workspace": "C:/Workspace/Salesforce/MM", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "XXSSU6CLP9U351NP1B1V2UB5YIMTR6DM", 
+    "metadata_container": "1dc1a0000009SIcAAM", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "CustomObject", 
+        "Profile", 
+        "StaticResource"
+    ]
+}
